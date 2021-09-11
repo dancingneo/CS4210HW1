@@ -64,7 +64,7 @@ if db:
 # X =
 
 #transform the original training classes to numbers and add to the vector Y. For instance Yes = 1, No = 2, so Y = [1, 1, 2, 2, ...]
-e= int(1)
+e= int(2)
 dictY = {}
 if db:
     for i, row in enumerate(db):
@@ -73,7 +73,7 @@ if db:
         else:
             dictY[row[4]]=e
             Y.append(dictY[row[4]])
-            e=e+1
+            e=e-1
 
 #print(Y)
 # Y =
